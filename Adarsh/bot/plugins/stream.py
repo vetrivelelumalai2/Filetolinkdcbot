@@ -116,17 +116,15 @@ async def private_receive_handler(c: Client, m: Message):
 #short link support added ✅
 
         msg_text ="""
-<b> Successfully Generated Your Link !
 
-<b>📧 File Name :- </b> <i><b>{}</b></i>
 
-<b>📦 File Size :- </b> <i><b>{}</b></i>
+<b>📧 Name :- </b> <i><b>{}</b></i>
+
+<b>📦 Size :- </b> <i><b>{}</b></i>
 
 <b>💌 link :- </b> <i><b>{}</b></i>
 
-
-
-<b>♻️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴 ♻️</b>"""
+"""
 
         await log_msg.reply_text(text=f"**Request By:** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**User I'd :** `{m.from_user.id}`\n**Stream Link :** {stream_link}", disable_web_page_preview=True, parse_mode="Markdown", quote=True)
         await m.reply_text(
