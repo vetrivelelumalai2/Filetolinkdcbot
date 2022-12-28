@@ -242,7 +242,7 @@ async def about_handler(bot, message):
 ┃
 ┣⪼<b>⚜ My Name : digitaldvdgiftBot</b>
 ┣⪼<b>⚜ Update : @{Var.UPDATES_CHANNEL}</b>
-┣⪼<b>🔸Version : 1.2</b>
+┣⪼<b>🔸Version : 3.2.1</b>
 ┣⪼<b>🔹Last Updated : [ 21-dec-22 ]</b>
 ┃
 <b>╰━━━━━━━〔THANK YOU〕</b>""",
