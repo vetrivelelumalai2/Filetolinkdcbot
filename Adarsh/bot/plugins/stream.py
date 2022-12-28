@@ -122,9 +122,9 @@ async def private_receive_handler(c: Client, m: Message):
 
 <b>📦 File Size :- </b> <i><b>{}</b></i>
 
-<b>💌 Download :- </b> <i><b>{}</b></i>
+<b>💌 link :- </b> <i><b>{}</b></i>
 
-<b>🖥 Watch :- </b> <i><b>{}</b></i>
+
 
 <b>♻️ 𝚃𝙷𝙸𝚂 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙰𝙽𝙳 𝚆𝙸𝙻𝙻 𝙽𝙾𝚃 𝙴𝚇𝙿𝙸𝚁𝙴 ♻️</b>"""
 
@@ -134,8 +134,8 @@ async def private_receive_handler(c: Client, m: Message):
             parse_mode="HTML", 
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Watch Now 🎦", url=online_linkkk), #Stream Link
-                                                InlineKeyboardButton('Download Link 📥', url=online_linkkk)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[
+                                                InlineKeyboardButton('Link 📥', url=online_linkkk)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -171,8 +171,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Download Now ⚡", url=stream_link),
-                     InlineKeyboardButton('Watch Now 🎦', url=online_link)] 
+                    [
+                     InlineKeyboardButton('link ', url=online_link)] 
                 ]
             )
         )
