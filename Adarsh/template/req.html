@@ -91,7 +91,36 @@ a {text-decoration: none; background-color: none; }
                 }
             },
 
-            
+            {
+        vastOptions: {
+            adList:                     {
+
+            roll: 'preRoll',
+            vastTag: '',
+            adText: 'Advertising supports us directly'
+
+            },
+            skipButtonCaption:          'Skip ad in 5 seconds',
+            skipButtonClickCaption:     'Skip ad <span class="skip_button_icon"></span>',
+            adText:                     null,
+            adTextPosition:             'top left',
+            adCTAText:                  'Visit now!',
+            adCTATextPosition:          'bottom right',
+            vastTimeout:                5000,
+            showPlayButton:             false,
+            maxAllowedVastTagRedirects: 5,
+
+            vastAdvanced: {
+                vastLoadedCallback:       (function() { console.log("Loaded") }),
+                noVastVideoCallback:      (function() { console.log("No bro") }),
+                vastVideoSkippedCallback: (function() { console.log("skippy") }),
+                vastVideoEndedCallback:   (function() { console.log("ended") })
+            }
+
+        }
+    }
+
+        );
 
         
         </script>
