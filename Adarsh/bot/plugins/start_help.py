@@ -63,9 +63,8 @@ async def start(b, m):
                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],        
-                [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url='https://t.me/zeusbotsnetwork'),
-                 InlineKeyboardButton("ʀᴇᴘᴏ", url='https://github.com/Selfie-bd/Filetolinkdcbot')]
-                ]
+                
+                
             ),
             disable_web_page_preview=True
         )
@@ -76,7 +75,7 @@ async def start(b, m):
                 if user.status == "banned":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n**[Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/OWNER_OF_STARK) Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                        text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n**[Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/vetri678) Tʜᴇʏ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -98,7 +97,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
+                    text="****",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -130,8 +129,8 @@ async def start(b, m):
 <u>**Successfully Generated Your Link !**</u>\n
 <b>📂 File Name :</b> {}\n
 <b>📦 File Size :</b> {}\n
-<b>📥 Download :</b> {}\n
-<b>🖥 Watch :</b> {}"""
+<b>📥 link:</b> {}\n
+"""
 
         await m.reply_text(
             text=msg_text.format(file_name, file_size, stream_link),
@@ -176,7 +175,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**𝙰𝙳𝙳 𝙵𝙾𝚁𝙲𝙴 𝚂𝚄𝙱 𝚃𝙾 𝙰𝙽𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻**",
+                text="****",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -241,11 +240,10 @@ async def about_handler(bot, message):
 
 <b>╭━━━━━━━〔File To Link〕</b>
 ┃
-┣⪼<b>⚜ My Name : File To Link Bot</b>
+┣⪼<b>⚜ My Name : digitaldvdgiftBot</b>
 ┣⪼<b>⚜ Update : @{Var.UPDATES_CHANNEL}</b>
-┣⪼<b>🔸Version : 3.1.2</b>
-┣⪼<b>🔹Last Updated : [ 21-aug-22 ]</b>
-┣⪼<b>✨YouTube Channel: <a href='https://youtube.com/channel/UCP4tsCLaLmJACqJJImknF8g'>Groupdcbots Channel</a></b>
+┣⪼<b>🔸Version : 1.2</b>
+┣⪼<b>🔹Last Updated : [ 21-dec-22 ]</b>
 ┃
 <b>╰━━━━━━━〔THANK YOU〕</b>""",
   parse_mode="html",
